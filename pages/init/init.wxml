@@ -1,0 +1,28 @@
+<!--pages/init/init.wxml-->
+<van-row custom-class="index_img">
+  <van-col offset="6" span="12">
+    <image src='/img/av.jpg'></image>
+  </van-col>
+</van-row>
+
+<van-row custom-class="index_title">
+  <van-col offset="6" span="12">请选择所在城市</van-col>
+</van-row>
+
+<van-row>
+  <van-col offset="3" span="6">
+    <van-button block='true' bindtap='bjtab'>
+      北京
+    </van-button>
+  </van-col>
+  <van-col span="6">
+    <van-button block='true' bindtap='njtab'>
+      南京
+    </van-button>
+  </van-col>
+  <van-col span="6">
+    <van-button block='true' bindtap='whtab'>
+      武汉
+    </van-button>
+  </van-col>
+</van-row>

@@ -1,0 +1,109 @@
+/**index.wxss**/
+
+view {
+  /* width: 100%; */
+}
+
+form {
+  width: 100%;
+}
+
+Page {
+  background: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*公用  */
+
+.radio {
+  display: block;
+  font-size: 30rpx;
+  padding: 15rpx 15rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.border_view {
+  width: 100%;
+  margin-top: 10rpx;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 30rpx;
+}
+
+.left_text_title {
+  text-align: left;
+  font-size: 38rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.left_text {
+  text-align: left;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.input_parent {
+  margin-bottom: 30rpx;
+}
+
+.input_text {
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+}
+
+.input_text.input_another {
+  text-align: 5rpx;
+  margin-left: 12rpx;
+  margin-top: 0;
+  margin-bottom: 10rpx;
+  width: 96%;
+}
+
+.container {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.ask_title {
+  width: 100%;
+  background-color: #a40000;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  padding: 15rpx 0;
+}
+
+.border_b {
+  margin: 0 auto;
+  width: 92%;
+  padding: 20rpx 10rpx;
+  border-bottom: 1px dotted darkgray;
+}
+
+.border_b text {
+  font-size: 26rpx;
+  display: block;
+}
+
+.picker {
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+}

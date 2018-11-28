@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/init/init",
+    "pages/index/index",
+    "pages/okpage/okpage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "合建志洋装饰",
+    "navigationBarTextStyle":"black"
+  }
+}
