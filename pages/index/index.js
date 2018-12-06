@@ -211,20 +211,13 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    // return {
-    //   title: '自定义转发标题',
-    //   success:function(res){
-    //     console.log(res);
-    //     var shareTickets = res.shareTickets[0];
-    //     console.log("妆发成功");
-    //     wx.getShareInfo({
-    //       shareTicket: shareTickets,
-    //       success: function (res) {
-    //         console.log(res);
-    //       }
-    //     });
-    //   }
-    // }
+    return {
+      title: '合建志洋装饰调研单',
+      path:'/pages/init/init',
+      success:function(res){
+        console.log(res);
+      }
+    }
   },
 
   bindDateChange: function (e) {
@@ -255,6 +248,8 @@ Page({
           //   icon: 'success',
           //   duration: 3000
           // })
+          console.log(res);
+          wx.setStorageSync("resultID", res.data.confusion);
           wx.navigateTo({
             url: '/pages/okpage/okpage'
           })

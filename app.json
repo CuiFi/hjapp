@@ -2,7 +2,9 @@
   "pages":[
     "pages/init/init",
     "pages/index/index",
-    "pages/okpage/okpage"
+    "pages/okpage/okpage",
+    "pages/result/result"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

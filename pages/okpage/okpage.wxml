@@ -12,5 +12,10 @@
                 <button class="weui-btn" type="default" bindtap='gobackhome'>重新填写</button>
             </view>
         </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="default" bindtap='goresult'>查看结果页</button>
+            </view>
+        </view>
     </view>
 </view>
