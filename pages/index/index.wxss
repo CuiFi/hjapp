@@ -16,6 +16,18 @@ Page {
   overflow-y: auto;
 }
 
+.sub_btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.sub_btn button{
+  border-radius: 0;
+  color: #fff;
+}
+
 /*公用  */
 
 .radio {

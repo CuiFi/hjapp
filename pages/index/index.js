@@ -147,7 +147,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.cityID)
+    // console.log(options.cityID)
     wx.setStorageSync("cityid", options.cityID);
     var _this = this;
     wx.request({
@@ -230,11 +230,10 @@ Page({
   formSubmit: function (e) {
     var formData = e.detail.value;
     var cityTabs = wx.getStorageSync("cityid");
-    // console.log(formData);
+    // console.log(e);
+
     var objform = Object.assign(formData, {"cityID":cityTabs});
     if (objform.q1 && objform.q2 && objform.q10){
-      // console.log(formData.q1);
-      console.log(objform);
       wx.request({
         url: 'https://request.hejianzhiyang.com/Index/two',
         method: "POST",
@@ -243,12 +242,6 @@ Page({
           'Content-Type': 'application/json'
         },
         success: function (res) {
-          // wx.showToast({
-          //   title: '感谢您的参与',
-          //   icon: 'success',
-          //   duration: 3000
-          // })
-          console.log(res);
           wx.setStorageSync("resultID", res.data.confusion);
           wx.navigateTo({
             url: '/pages/okpage/okpage'
@@ -258,7 +251,7 @@ Page({
     }else{
       wx.showModal({
         title: '警告',
-        content: '请填写电话,姓名及对接人',
+        content: '请填写电话,姓名,对接人',
         showCancel:false,
         success(res) {
           if (res.confirm) {

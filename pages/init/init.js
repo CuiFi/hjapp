@@ -35,24 +35,6 @@ Page({
     })
   },
 
-  downpdf:function(e){
-    console.log(e);
-    wx.downloadFile({
-      // 示例 url，并非真实存在
-      url: 'https://request.hejianzhiyang.com/a.pdf',
-      success: function (res) {
-        const filePath = res.tempFilePath
-        console.log(filePath);
-        wx.openDocument({
-          filePath: filePath,
-          success: function (res) {
-            console.log(res)
-          }
-        })
-      }
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */

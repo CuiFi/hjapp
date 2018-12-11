@@ -32,6 +32,3 @@
     <van-button block='true' open-type="contact" bindcontact="handleContact">进入客服</van-button>
   </van-col>
 </van-row> -->
-<!-- <button bindtap='haha'>点我</button> -->
-<!-- <button bindtap='downpdf'>下载</button> -->
-<!-- <web-view src="https://request.hejianzhiyang.com/a.pdf"></web-view> -->
