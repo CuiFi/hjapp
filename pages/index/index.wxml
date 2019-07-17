@@ -17,19 +17,19 @@
     </view>
 
 
-    <view class='left_text'>Q2:您的手机号码:
+    <!-- <view class='left_text'>Q2:您的手机号码:
       <text style='color:red'>*</text>
-    </view>
-    <view class='input_parent'>
+    </view> -->
+    <!-- <view class='input_parent'>
       <input class='input_text' type='text' name="q2"></input>
-    </view>
+    </view> -->
 
-    <view class='left_text'>Q3:楼盘名称、户型及面积?请填写:</view>
+    <!-- <view class='left_text'>Q3:楼盘名称、户型及面积?请填写:</view>
     <view class='input_parent'>
       <input class='input_text' type='text' name="q3"></input>
-    </view>
+    </view> -->
 
-    <view class='left_text'>Q4:房子使用倾向?</view>
+    <view class='left_text'>Q2:房子使用倾向?</view>
     <view class='border_view'>
       <radio-group class="radio-group" name="q4" bindchange="radioChange4">
         <label class="radio">
@@ -57,12 +57,12 @@
       </radio-group>
     </view>
 
-    <view class='left_text'>Q5:常住家庭成员?请填写:</view>
+    <view class='left_text'>Q3:常住家庭成员?请填写:</view>
     <view class='input_parent'>
       <input class='input_text' type='text' name="q5"></input>
     </view>
 
-    <view class='left_text'>Q6:特别关照人群?
+    <view class='left_text'>Q4:特别关照人群?
       <text style='color:blue'>[多选题]</text>
     </view>
     <view class='border_view'>
@@ -77,12 +77,12 @@
           <checkbox value="残障人士" />残障人士
         </label>
         <label style='border-bottom:0' class="radio">
-          <checkbox value="少数名族" />少数名族
+          <checkbox value="少数民族" />少数民族
         </label>
       </checkbox-group>
     </view>
 
-    <view class='left_text'>Q7:了解公司的途径?</view>
+    <view class='left_text'>Q5:了解公司的途径?</view>
     <view class='border_view'>
       <radio-group class="radio-group" name="q7" bindchange="radioChange7">
         <label class="radio">
@@ -104,12 +104,12 @@
       </radio-group>
     </view>
 
-    <view class='left_text'>Q8:您的微信号:</view>
+    <view class='left_text'>Q6:您的微信号:</view>
     <view class='input_parent'>
       <input class='input_text' type='text' name="q8"></input>
     </view>
 
-    <view class='left_text'>Q9:填写日期:</view>
+    <view class='left_text'>Q7:填写日期:</view>
     <view class='input_parent'>
       <picker name="q9" mode="date" value="{{date}}" bindchange="bindDateChange">
         <view class="picker">
@@ -118,7 +118,7 @@
       </picker>
     </view>
 
-    <view class='left_text'>Q10:对接合建服务人员姓名:
+    <view class='left_text'>Q8:对接合建服务人员姓名:
       <text style='color:red'>*</text>
     </view>
     <view class='input_parent'>

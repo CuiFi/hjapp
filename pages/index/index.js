@@ -230,19 +230,25 @@ Page({
   formSubmit: function (e) {
     var formData = e.detail.value;
     var cityTabs = wx.getStorageSync("cityid");
+    var onlyID = wx.getStorageSync('onlyID') ? wx.getStorageSync('onlyID') : '';
+    // console.log(typeof wx.getStorageSync('onlyID'))
+    // console.log(onlyID);
     // console.log(e);
 
-    var objform = Object.assign(formData, {"cityID":cityTabs});
-    if (objform.q1 && objform.q2 && objform.q10){
+    var objform = Object.assign(formData, { "cityID": cityTabs }, { "onlyID": onlyID });
+    // console.log(objform)
+    if (objform.q1 && objform.q10){
       wx.request({
         url: 'https://request.hejianzhiyang.com/Index/two',
         method: "POST",
         data: objform,
         header: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/x-www-form-urlencoded'
         },
         success: function (res) {
           wx.setStorageSync("resultID", res.data.confusion);
+          wx.setStorageSync("onlyID", res.data.onlyID);
+          // console.table(res)
           wx.navigateTo({
             url: '/pages/okpage/okpage'
           })
@@ -251,7 +257,7 @@ Page({
     }else{
       wx.showModal({
         title: '警告',
-        content: '请填写电话,姓名,对接人',
+        content: '请填写姓名,对接人',
         showCancel:false,
         success(res) {
           if (res.confirm) {
